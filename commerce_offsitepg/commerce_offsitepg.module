@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains testpg.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function testpg_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the testpg module.
+    case 'help.page.testpg':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Test payment gateway') . '</p>';
+      return $output;
+
+    default:
+  }
+}

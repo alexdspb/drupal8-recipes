@@ -1,0 +1,19 @@
+
+commerce_testpg.invoice_setup_error:
+  path: '/invoice/setup/error'
+  defaults:
+    _controller: '\Drupal\commerce_testpg\Controller\DefaultController::invoiceSetupError'
+  requirements:
+    _permission: 'access content'
+commerce_testpg.invoice_state_get:
+  path: '/invoice/state/get'
+  defaults:
+    _controller: '\Drupal\commerce_testpg\Controller\DefaultController::invoiceStateGet'
+  requirements:
+    _permission: 'access content'
+commerce_testpg.invoice_check:
+  path: '/invoice/check'
+  defaults:
+    _controller: '\Drupal\commerce_testpg\Controller\DefaultController::invoiceCheck'
+  requirements:
+    _permission: 'access content'

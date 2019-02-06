@@ -1,0 +1,5 @@
+name: 'Commerce Onsite PG'
+type: module
+description: 'Onsite Payment Gateway for Commerce'
+core: 8.x
+package: 'Commerce (custom)'
